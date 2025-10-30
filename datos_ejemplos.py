@@ -1,4 +1,5 @@
 '''
+
 Primera snapshot realizada / Branch: Master
 
 Programa el cual lee un diccionario con los datos introducidos a mano y los pasa a un documento con extensión .CSV para su clara lectura llamando a una función.
@@ -13,6 +14,9 @@ Si el archivo no existe, se deben escribir los encabezados antes de los valores.
 Al finalizar, mostrar un mensaje indicando que los datos se guardaron correctamente.
 
 *Los nombres dados por la IA utilizada han sido modificados a gusto del usuario.
+
+'''
+
 '''
 
 from gestion_archivos import guardar_en_csv
@@ -26,3 +30,18 @@ d = {
 }
 
 guardar_en_csv(d)
+
+'''
+
+
+
+#Programa el cuál carga los datos de un fichero .json y lo almacena en una variable indicada en la llamada de la fución para su manejo posterior.
+
+'''
+
+from gestion_archivos import importar_json 
+nombre_archivo = "DB_Alumnos.json"
+j = importar_json(nombre_archivo)
+print(j[1]["id"]) 
+
+'''
